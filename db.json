@@ -1,73 +1,19 @@
 [
 {"type":"header","version":"5.0.1","comment":"Export to JSON plugin for PHPMyAdmin"},
-{"type":"database","name":"com"},
-{"type":"table","name":"blog","database":"com","data":
+{"type":"database","name":"db"},
+{"type":"table","name":"account","database":"db","data":
 [
-{"Blog_ID":"1","Blog_name":"test 1 ","Blog_dedcription":"对于世界而言，你是一个人，但是对于我，你是我的整个世界","Blog_date":"2020-03-28"}
+{"id":"1","username":"thanh","password":"thanh","role_ID":"1"},
+{"id":"2","username":"khai","password":"khai","role_ID":"1"},
+{"id":"3","username":"duong","password":"duongpt","role_ID":"2"},
+{"id":"4","username":"tung","password":"tungdt","role_ID":"3"}
 ]
 }
-,{"type":"table","name":"category","database":"com","data":
+,{"type":"table","name":"role","database":"db","data":
 [
-{"Category_ID":"1","Category_name":"Information Technology"}
-]
-}
-,{"type":"table","name":"document","database":"com","data":
-[
-{"Document_ID":"1","Document_name":"Link test api","Document_date":"2020-03-28","Document_link":"https:\/\/jsonplaceholder.typicode.com\/todos"}
-]
-}
-,{"type":"table","name":"folder","database":"com","data":
-[
-{"Folder_ID":"1","Folder_name":"Excercise 1"}
-]
-}
-,{"type":"table","name":"message","database":"com","data":
-[
-{"Message_ID":"1","Message_content":"Can you send me another documents","Message_name":"request from student","Message_date":"2020-03-28"},
-{"Message_ID":"2","Message_content":"Yes, wait some minutes ","Message_name":"reply","Message_date":"2020-03-28"}
-]
-}
-,{"type":"table","name":"role","database":"com","data":
-[
-{"Role_ID":"1","Role_name":"Student"},
-{"Role_ID":"2","Role_name":"Tutor"},
-{"Role_ID":"3","Role_name":"Authorized Staff"}
-]
-}
-,{"type":"table","name":"subject","database":"com","data":
-[
-{"Subject_ID":"1","Subject_name":"Requirement Management","Subject_description":"It is a subject that you can learn about the Process of a nomal project","Subject_price":"100000","Category_ID":"1"},
-{"Subject_ID":"2","Subject_name":"Enterprise Web Software Development","Subject_description":"No class this afternoon . Dear all, because I am sick so the class Enterprise Web this afternoon is cancelled. Make up class will be informed later. Thanks for your understanding. Ms. Duong.","Subject_price":"50000","Category_ID":"1"}
-]
-}
-,{"type":"table","name":"subject_student_detail","database":"com","data":
-[
-{"Subject_ID":"1","User_ID":"6"},
-{"Subject_ID":"2","User_ID":"6"},
-{"Subject_ID":"2","User_ID":"7"}
-]
-}
-,{"type":"table","name":"user","database":"com","data":
-[
-{"User_ID":"6","User_name":"thanh","User_username":"thanh","User_password":"123","User_email":"thanh@abc.com","Blog_ID":null,"Document_ID":null,"Video_ID":null,"RoleID":"1"},
-{"User_ID":"7","User_name":"duong","User_username":"duongpt","User_password":"123","User_email":"duongpt@abc.com","Blog_ID":"1","Document_ID":"1","Video_ID":"1","RoleID":"2"},
-{"User_ID":"8","User_name":"tung","User_username":"tungdt","User_password":"123","User_email":"tungdt@abc.com","Blog_ID":null,"Document_ID":null,"Video_ID":null,"RoleID":"3"}
-]
-}
-,{"type":"table","name":"user_folder_details","database":"com","data":
-[
-{"Folder_ID":"1","User_ID":"7"}
-]
-}
-,{"type":"table","name":"user_message_details","database":"com","data":
-[
-{"User_ID":"6","Message_ID":"1"},
-{"User_ID":"7","Message_ID":"2"}
-]
-}
-,{"type":"table","name":"video","database":"com","data":
-[
-{"Video_ID":"1","Video_links":"https:\/\/www.youtube.com\/watch?v=SNES5Y-tYxM","Video_name":"BINZ - OK (Official Music Video)","Video_time_recorded":"2020-03-28"}
+{"roleID":"1","role_name":"Student"},
+{"roleID":"2","role_name":"Tutor"},
+{"roleID":"3","role_name":"Authorized Staff"}
 ]
 }
 ]
